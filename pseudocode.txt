@@ -17,10 +17,28 @@ DISPLAY "login"
 CASE 2:
 DISPLAY "register"
 
-if pil=1 "login"
-    DISPLAY "menu"
-else "register"
-    DISPLAY "from register"
+--LOGIN--
+
+int i=1
+do{
+display (username) input "username"
+display (password) input "password
+IF(username=username && password== password)
+WRITE login = sucses	
+DISPLAY "menu"
+i=4
+
+ELSE{
+WRITE username/password salah
+DISPLAY "login"
+i=i+1
+
+WHILE(i<=3)
+
+if(login != sucses)
+WRITE "anda telah 3x salah login, silahkan coba lagi dalam waktu 24 jam"
+DISPLAY "login"
+
 --MENU--
 DISPLAY "menu"
 input "sct_menu"
